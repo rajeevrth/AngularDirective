@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="angularDirectiveApp">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="angular.min.js"></script>
-        <script src="app.js"></script>
-    </head>
-    <body ng-controller="appController">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="route.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="appController">
     <mydirective name="rajeev"></mydirective>
     {{rajeev}}
-    </body>
+    <!--<a href="#/hello">Hello</a>-->
+    <div ng-view>
+    </div>
+</body>
+
 </html>
